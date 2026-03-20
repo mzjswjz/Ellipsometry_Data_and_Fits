@@ -1,58 +1,24 @@
 # Ellipsometry_Data_and_Fits
 
-This repository contains research data and analysis for ellipsometry measurements used in thin-film photovoltaic and optoelectronic device characterization.
+Raw ellipsometry measurement data for various organic semiconductor thin films.
 
-## What is Ellipsometry?
+## Data Files
 
-Ellipsometry is a non-destructive optical technique that measures the change in polarization state of light upon reflection from a sample surface. It is widely used to determine:
-- Thin film thickness (nanometer precision)
-- Optical constants (refractive index n, extinction coefficient k)
-- Surface roughness and interface quality
-- Material composition and uniformity
+| File | Description |
+|------|-------------|
+| `231205_Cluster_a6T_BPhen_DCV3T_HB194_SubNc.zip` | Ellipsometry data for cluster of materials: a6T, BPhen, DCV3T, HB194, SubNc |
+| `240212_PEDOT.zip` | PEDOT thin film ellipsometry data |
+| `240820_GIWAX_SubNc_DCV3T.zip` | GIWAXS and ellipsometry data for SubNc and DCV3T |
+| `241114_FRET_TFs_PL_DTDCTB_HB194_SubPc.zip` | FRET-related thin film photoluminescence and ellipsometry data for DTDCTB, HB194, SubPc |
+| `250212_ZnO_FBR.zip` | ZnO and FBR material ellipsometry data |
 
-## What Type of Data
+## Contents
 
-This repository contains:
-- **Raw ellipsometry data**: Psi (Ψ) and Delta (Δ) angles as functions of wavelength
-- **Fitted optical constants**: Refractive index (n) and extinction coefficient (k) spectra
-- **Thickness measurements**: Film thickness values with error estimates
-- **Multi-angle measurements**: Data collected at various incidence angles for improved accuracy
-
-## Ellipsometry Measurements
-
-The measurements were performed on:
-- Organic semiconductor thin films
-- Perovskite solar cell layers
-- Transparent conductive oxides
-- Multi-layer device stacks
-
-Measurement parameters typically include:
-- Wavelength range: UV-Vis-NIR (e.g., 200-1700 nm)
-- Incidence angles: 55°-75°
-- Spot size: ~1-3 mm
-
-## Analysis Methods
-
-The fitting process uses:
-- **Cauchy or Sellmeier dispersion models** for transparent layers
-- **Lorentz oscillator models** for absorbing materials
-- **Effective medium approximation (EMA)** for mixed or porous layers
-- **Multi-layer optical modeling** to account for substrate and interface effects
-- **Least-squares regression** to minimize the difference between measured and modeled Ψ/Δ
-
-## Data Format
-
-**Raw data files** typically contain:
-- Wavelength (nm)
-- Incidence angle (degrees)
-- Psi (Ψ) and Delta (Δ) values
-- Measurement errors
-
-**Fitted results** include:
-- Layer thicknesses (nm)
-- n and k spectra
-- Mean squared error (MSE) of the fit
-- Confidence intervals for fitted parameters
+Each ZIP file contains raw ellipsometry measurement files (typically .txt or .dat format) including:
+- Psi and Delta measurements
+- Refractive index (n) and extinction coefficient (k) data
+- Thickness information
+- Fit parameters
 
 ## Author
 
