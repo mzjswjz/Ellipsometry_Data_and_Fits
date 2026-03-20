@@ -24,7 +24,3 @@ This is primarily a data repository. Files can be accessed directly or loaded in
 ## Author
 
 mzjswjz
-
-## License
-
-MIT
