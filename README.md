@@ -1,25 +1,58 @@
 # Ellipsometry_Data_and_Fits
 
-Research data and analysis for ellipsometry measurements.
+This repository contains research data and analysis for ellipsometry measurements used in thin-film photovoltaic and optoelectronic device characterization.
 
-## Description
+## What is Ellipsometry?
 
-This repository contains ellipsometry measurement data and fitting results. Ellipsometry is an optical technique used to characterize thin films, surfaces, and materials by measuring the change in polarization state of light reflected from a sample.
+Ellipsometry is a non-destructive optical technique that measures the change in polarization state of light upon reflection from a sample surface. It is widely used to determine:
+- Thin film thickness (nanometer precision)
+- Optical constants (refractive index n, extinction coefficient k)
+- Surface roughness and interface quality
+- Material composition and uniformity
 
-## Contents
+## What Type of Data
 
-- Raw ellipsometry measurement data
-- Fitted optical constants and thickness values
-- Analysis scripts and results
+This repository contains:
+- **Raw ellipsometry data**: Psi (Ψ) and Delta (Δ) angles as functions of wavelength
+- **Fitted optical constants**: Refractive index (n) and extinction coefficient (k) spectra
+- **Thickness measurements**: Film thickness values with error estimates
+- **Multi-angle measurements**: Data collected at various incidence angles for improved accuracy
 
-## Requirements
+## Ellipsometry Measurements
 
-- Data analysis tools compatible with the provided file formats
-- Optional: Python with NumPy/Pandas for custom analysis
+The measurements were performed on:
+- Organic semiconductor thin films
+- Perovskite solar cell layers
+- Transparent conductive oxides
+- Multi-layer device stacks
 
-## Usage
+Measurement parameters typically include:
+- Wavelength range: UV-Vis-NIR (e.g., 200-1700 nm)
+- Incidence angles: 55°-75°
+- Spot size: ~1-3 mm
 
-This is primarily a data repository. Files can be accessed directly or loaded into your preferred analysis software.
+## Analysis Methods
+
+The fitting process uses:
+- **Cauchy or Sellmeier dispersion models** for transparent layers
+- **Lorentz oscillator models** for absorbing materials
+- **Effective medium approximation (EMA)** for mixed or porous layers
+- **Multi-layer optical modeling** to account for substrate and interface effects
+- **Least-squares regression** to minimize the difference between measured and modeled Ψ/Δ
+
+## Data Format
+
+**Raw data files** typically contain:
+- Wavelength (nm)
+- Incidence angle (degrees)
+- Psi (Ψ) and Delta (Δ) values
+- Measurement errors
+
+**Fitted results** include:
+- Layer thicknesses (nm)
+- n and k spectra
+- Mean squared error (MSE) of the fit
+- Confidence intervals for fitted parameters
 
 ## Author
 
